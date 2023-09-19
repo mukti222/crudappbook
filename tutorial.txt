@@ -1,0 +1,23 @@
+https://www.youtube.com/watch?v=l9mb1jxj0D0
+
+1.
+npm init, npm install express body-parser pg
+
+2.
+membuat koneksi ke database
+const {Client} = require('pg')
+const client = new Client ({
+    host : "localhost",
+    user: "postgres",
+    port: 5432,
+    password: "postgres"
+})
+module.exports = client
+
+3.
+membuat api.js 
+terdapat app listen untuk server localhost
+dan client.connect utk DB postgree
+
+4. 
+buat get, post, put,  
